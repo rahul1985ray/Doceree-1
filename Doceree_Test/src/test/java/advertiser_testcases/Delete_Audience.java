@@ -1,17 +1,14 @@
 package advertiser_testcases;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Audience {
+public class Delete_Audience {
 
 	WebDriver driver = null;
 
@@ -27,24 +24,16 @@ public class Audience {
 	}
 
 	@Test
-	public void createAudience() throws InterruptedException {
+	public void deleteAudience() throws InterruptedException {
 		driver.get("https://qa-exchange.doceree.com/login");
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(10000);
 		driver.get("https://qa-exchange.doceree.com/advertiser/audience");
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//img[@alt='audience'])[2]")).click();
-		driver.findElement(By.id("mat-input-0")).sendKeys("Hello India");
+		// Thread.sleep(5000);
+		driver.findElement(By.xpath("(//span/a/i)[16]")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
-
+		driver.findElement(By.xpath("//button[contains(.,'Yes')]")).click();
 	}
-
-	@AfterMethod
-	public void teardown() throws InterruptedException {
-		//driver.quit();
-	}
-
 }

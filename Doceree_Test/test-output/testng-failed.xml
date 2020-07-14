@@ -3,13 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="advertiser_testcases.Audience">
+      <class name="advertiser_testcases.Delete_Audience">
         <methods>
           <include name="set_up"/>
-          <include name="teardown"/>
-          <include name="createAudience"/>
+          <include name="deleteAudience"/>
         </methods>
-      </class> <!-- advertiser_testcases.Audience -->
+      </class> <!-- advertiser_testcases.Delete_Audience -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
