@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-14T11:07:19Z" name="Default suite" finished-at="2020-07-14T11:07:38Z" duration-ms="19441">
+  <suite started-at="2020-07-14T11:57:24Z" name="Default suite" finished-at="2020-07-14T11:58:10Z" duration-ms="45728">
     <groups>
     </groups>
-    <test started-at="2020-07-14T11:07:19Z" name="Default test" finished-at="2020-07-14T11:07:38Z" duration-ms="19441">
-      <class name="advertiser_testcases.Login">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Login@34b9f960]" started-at="2020-07-14T16:37:19Z" name="set_up" finished-at="2020-07-14T16:37:25Z" duration-ms="5740" status="PASS">
+    <test started-at="2020-07-14T11:57:24Z" name="Default test" finished-at="2020-07-14T11:58:10Z" duration-ms="45728">
+      <class name="advertiser_testcases.Audience_variations">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Audience_variations@34b9f960]" started-at="2020-07-14T17:27:24Z" name="set_up" finished-at="2020-07-14T17:27:30Z" duration-ms="5720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method signature="advertiserlogin()[pri:0, instance:advertiser_testcases.Login@34b9f960]" started-at="2020-07-14T16:37:25Z" name="advertiserlogin" finished-at="2020-07-14T16:37:38Z" duration-ms="13050" status="PASS">
+        <test-method signature="createAudienceVariation()[pri:0, instance:advertiser_testcases.Audience_variations@34b9f960]" started-at="2020-07-14T17:27:30Z" name="createAudienceVariation" finished-at="2020-07-14T17:28:09Z" duration-ms="39997" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- advertiserlogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Login@34b9f960]" started-at="2020-07-14T16:37:38Z" name="teardown" finished-at="2020-07-14T16:37:38Z" duration-ms="641" status="PASS">
+        </test-method> <!-- createAudienceVariation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Audience_variations@34b9f960]" started-at="2020-07-14T17:28:09Z" name="teardown" finished-at="2020-07-14T17:28:09Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- advertiser_testcases.Login -->
+      </class> <!-- advertiser_testcases.Audience_variations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
