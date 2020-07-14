@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="advertiser_testcases.Demo"/>
+      <class name="advertiser_testcases.Login"/>
+      <class name="advertiser_testcases.Edit_Audience"/>
+      <class name="advertiser_testcases.Delete_Audience"/>
+      <class name="advertiser_testcases.Audience"/>
+      <class name="advertiser_testcases.Audience_variations"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
