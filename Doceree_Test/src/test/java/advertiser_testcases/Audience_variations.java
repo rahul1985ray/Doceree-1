@@ -1,6 +1,11 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -48,6 +53,8 @@ public class Audience_variations {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//mat-checkbox[@id='mat-checkbox-3']/label/div")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
+		Thread.sleep(3000);
+		assertTrue(driver.findElement(By.xpath("//td[contains(text(),'India Audience')]")).isDisplayed());
 		
 
 	}

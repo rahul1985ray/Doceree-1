@@ -1,6 +1,11 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -37,6 +42,8 @@ public class Audience {
 		driver.findElement(By.id("mat-input-0")).sendKeys("Hello India");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
+		Thread.sleep(3000);
+		assertTrue(driver.findElement(By.xpath("//td[contains(text(),'Hello India')]")).isDisplayed());
 
 	}
 

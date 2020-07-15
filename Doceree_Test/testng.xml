@@ -6,6 +6,7 @@
       <class name="advertiser_testcases.Login"/>
       <class name="advertiser_testcases.Edit_Audience"/>
       <class name="advertiser_testcases.Delete_Audience"/>
+      <class name="advertiser_testcases.Logout"/>
       <class name="advertiser_testcases.Audience"/>
       <class name="advertiser_testcases.Audience_variations"/>
     </classes>
