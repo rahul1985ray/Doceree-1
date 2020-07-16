@@ -1,5 +1,7 @@
 package advertiser_testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -42,7 +44,7 @@ public class Send_Invitations {
 		driver.findElement(By.name("email3")).sendKeys("rayrahul85@gmail.com");
 		driver.findElement(By.xpath("//button[contains(.,'Send')]")).click();
 		Thread.sleep(2000);
-		assertTrue(driver.findElement(By.xpath("//i[@class='icon-18 fs16 text-success']")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//i[@class='icon-18 fs16 text-success']")).isDisplayed());
 		
 	}
 	

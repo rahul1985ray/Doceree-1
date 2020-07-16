@@ -1,5 +1,7 @@
 package advertiser_testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -31,7 +33,7 @@ public class Edit_Profile {
 	@Test
 	public void advertisereditprofile() throws InterruptedException {
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		driver.get("https://qa-exchange.doceree.com/login");
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
@@ -45,7 +47,7 @@ public class Edit_Profile {
 		driver.findElement(By.xpath("//h2/a/i")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.name("businessName")).clear();
-		driver.findElement(By.name("businessName")).sendKeys("India Advertiser");
+		driver.findElement(By.name("businessName")).sendKeys("India Advertised");
 		driver.findElement(By.id("saveProfileBtn")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//div[2]/div/h2/a/i")).click();
@@ -67,8 +69,8 @@ public class Edit_Profile {
 		Thread.sleep(1000);
 		driver.findElement(By.id("saveProfileBtn")).click();
 		Thread.sleep(2000);
-		assertTrue(driver.findElement(By.xpath("//p[contains(text(),'India Advertiser')]")).isDisplayed());
-		assertTrue(driver.findElement(By.xpath("//p[contains(text(),'Central Delhi, Delhi')]")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'India Advertised')]")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'Central Delhi, Delhi')]")).isDisplayed());
 		
 
 	}

@@ -1,6 +1,8 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
@@ -54,7 +56,7 @@ public class Edit_Audience {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[contains(.,'Update')]")).click();
 		Thread.sleep(2000);
-		assertTrue(driver.findElement(By.xpath("//td[contains(text(),'Edited Audiences')]")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//td[contains(text(),'Edited Audiences')]")).isDisplayed());
 		
 	}
 	

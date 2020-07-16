@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-16T10:18:54Z" name="Default suite" finished-at="2020-07-16T10:19:42Z" duration-ms="48280">
+  <suite started-at="2020-07-16T10:33:48Z" name="Default suite" finished-at="2020-07-16T10:34:38Z" duration-ms="49398">
     <groups>
     </groups>
-    <test started-at="2020-07-16T10:18:54Z" name="Default test" finished-at="2020-07-16T10:19:42Z" duration-ms="48280">
-      <class name="advertiser_testcases.Edit_Audience">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Edit_Audience@34b9f960]" started-at="2020-07-16T15:48:54Z" name="set_up" finished-at="2020-07-16T15:49:00Z" duration-ms="5775" status="PASS">
+    <test started-at="2020-07-16T10:33:48Z" name="Default test" finished-at="2020-07-16T10:34:38Z" duration-ms="49398">
+      <class name="advertiser_testcases.Edit_Profile">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:03:48Z" name="set_up" finished-at="2020-07-16T16:03:54Z" duration-ms="5734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method signature="editAudience()[pri:0, instance:advertiser_testcases.Edit_Audience@34b9f960]" started-at="2020-07-16T15:49:00Z" name="editAudience" finished-at="2020-07-16T15:49:41Z" duration-ms="41866" status="PASS">
+        <test-method signature="advertisereditprofile()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:03:54Z" name="advertisereditprofile" finished-at="2020-07-16T16:04:37Z" duration-ms="43011" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAudience -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Edit_Audience@34b9f960]" started-at="2020-07-16T15:49:41Z" name="teardown" finished-at="2020-07-16T15:49:42Z" duration-ms="629" status="PASS">
+        </test-method> <!-- advertisereditprofile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:04:37Z" name="teardown" finished-at="2020-07-16T16:04:38Z" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- advertiser_testcases.Edit_Audience -->
+      </class> <!-- advertiser_testcases.Edit_Profile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

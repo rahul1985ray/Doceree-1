@@ -8,7 +8,9 @@
       <class name="advertiser_testcases.Delete_Audience"/>
       <class name="advertiser_testcases.Logout"/>
       <class name="advertiser_testcases.Audience"/>
+      <class name="advertiser_testcases.Edit_Profile"/>
       <class name="advertiser_testcases.Audience_variations"/>
+      <class name="advertiser_testcases.Send_Invitations"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,6 +1,8 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
@@ -54,7 +56,7 @@ public class Audience_variations {
 		driver.findElement(By.xpath("//mat-checkbox[@id='mat-checkbox-3']/label/div")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
 		Thread.sleep(2000);
-		assertTrue(driver.findElement(By.xpath("//td[contains(text(),'India Audience')]")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//td[contains(text(),'India Audience')]")).isDisplayed());
 		
 
 	}
