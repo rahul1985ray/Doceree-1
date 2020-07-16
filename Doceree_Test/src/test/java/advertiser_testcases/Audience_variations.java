@@ -46,14 +46,14 @@ public class Audience_variations {
 		driver.findElement(By.xpath("//button[contains(.,'All')]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//input[@type='checkbox'])[4]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//mat-checkbox[@id='mat-checkbox-2']/label/div")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//mat-checkbox[@id='mat-checkbox-3']/label/div")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		assertTrue(driver.findElement(By.xpath("//td[contains(text(),'India Audience')]")).isDisplayed());
 		
 

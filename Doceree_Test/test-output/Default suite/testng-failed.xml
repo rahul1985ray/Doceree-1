@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="advertiser_testcases.Send_Invitations">
+      <class name="advertiser_testcases.Edit_Profile">
         <methods>
           <include name="set_up"/>
-          <include name="sendInvite"/>
+          <include name="advertisereditprofile"/>
         </methods>
-      </class> <!-- advertiser_testcases.Send_Invitations -->
+      </class> <!-- advertiser_testcases.Edit_Profile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
