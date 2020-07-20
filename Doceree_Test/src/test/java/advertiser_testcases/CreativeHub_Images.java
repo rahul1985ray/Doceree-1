@@ -3,6 +3,7 @@ package advertiser_testcases;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,11 +47,17 @@ public class CreativeHub_Images {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[6]/a/div")).click();
 		//Thread.sleep(3000);
-		driver.switchTo().activeElement();
+		//driver.switchTo().activeElement().sendKeys("C:\\Users\\User\\git\\Doceree\\Doceree_Test\\Files\\Creative\\300x600 - Copy.png");
 		WebElement creative = driver.findElement(By.xpath("//input[@type='file']"));
 		creative.sendKeys("C:\\Users\\User\\git\\Doceree\\Doceree_Test\\Files\\Creative\\300x600 - Copy.png");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(.,'Upload')]")).click();
+		driver.switchTo().parentFrame();
+		creative.sendKeys(Keys.ESCAPE);
+		Thread.sleep(2000);
+		driver.findElement(By.name("creativeName")).sendKeys("Test Image");
+		driver.findElement(By.xpath("//mat-dialog-actions/button")).click();
+		
 		
 		
 		
