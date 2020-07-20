@@ -2,24 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-16T10:33:48Z" name="Default suite" finished-at="2020-07-16T10:34:38Z" duration-ms="49398">
+  <suite started-at="2020-07-20T11:14:31Z" name="Default suite" finished-at="2020-07-20T11:15:14Z" duration-ms="43530">
     <groups>
     </groups>
-    <test started-at="2020-07-16T10:33:48Z" name="Default test" finished-at="2020-07-16T10:34:38Z" duration-ms="49398">
-      <class name="advertiser_testcases.Edit_Profile">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:03:48Z" name="set_up" finished-at="2020-07-16T16:03:54Z" duration-ms="5734" status="PASS">
+    <test started-at="2020-07-20T11:14:31Z" name="Default test" finished-at="2020-07-20T11:15:14Z" duration-ms="43530">
+      <class name="advertiser_testcases.CreativeHub_Images">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.CreativeHub_Images@102cec62]" started-at="2020-07-20T16:44:31Z" name="set_up" finished-at="2020-07-20T16:44:36Z" duration-ms="5666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method signature="advertisereditprofile()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:03:54Z" name="advertisereditprofile" finished-at="2020-07-16T16:04:37Z" duration-ms="43011" status="PASS">
+        <test-method signature="uploadImages()[pri:0, instance:advertiser_testcases.CreativeHub_Images@102cec62]" started-at="2020-07-20T16:44:36Z" name="uploadImages" finished-at="2020-07-20T16:45:14Z" duration-ms="37854" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- advertisereditprofile -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Edit_Profile@34b9f960]" started-at="2020-07-16T16:04:37Z" name="teardown" finished-at="2020-07-16T16:04:38Z" duration-ms="641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- advertiser_testcases.Edit_Profile -->
+        </test-method> <!-- uploadImages -->
+      </class> <!-- advertiser_testcases.CreativeHub_Images -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

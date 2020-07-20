@@ -1,30 +1,26 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertTrue;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class Audience_variations {
 
 	WebDriver driver = null;
+	String baseURL = null ;
 
 	@BeforeMethod
 	public void set_up() {
 		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath+"\\Drivers\\Chrome\\chromedriver.exe");
 		driver = new ChromeDriver();
+		baseURL = "https://qa-exchange.doceree.com/login" ;
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -33,13 +29,13 @@ public class Audience_variations {
 
 	@Test
 	public void createAudienceVariation() throws InterruptedException {
-		driver.get("https://qa-exchange.doceree.com/login");
+		driver.get(baseURL);
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		driver.get("https://qa-exchange.doceree.com/advertiser/audience");
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		driver.findElement(By.xpath("(//img[@alt='audience'])[2]")).click();
 		driver.findElement(By.id("mat-input-0")).sendKeys("India Audience");
 		Thread.sleep(3000);

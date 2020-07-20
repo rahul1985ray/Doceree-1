@@ -1,18 +1,16 @@
 package advertiser_testcases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class Login {
-
+public class CreativeHub_Images {
+	
 	WebDriver driver = null;
 	String baseURL = null ;
 
@@ -29,24 +27,33 @@ public class Login {
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 
 	}
-
+	
 	@Test
-	public void advertiserlogin() {
-
+	public void uploadImages() throws InterruptedException {
+		
 		driver.get(baseURL);
+		
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
 
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		AssertJUnit.assertTrue(driver.findElement(By.linkText("Audience")).isDisplayed());
+		Thread.sleep(15000);
 		
-
-	}
-
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
+		driver.get("https://qa-exchange.doceree.com/advertiser/creativeHUB");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[contains(.,'Add Creative')]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[6]/a/div")).click();
+		//Thread.sleep(3000);
+		driver.switchTo().activeElement();
+		WebElement creative = driver.findElement(By.xpath("//input[@type='file']"));
+		creative.sendKeys("C:\\Users\\User\\git\\Doceree\\Doceree_Test\\Files\\Creative\\300x600 - Copy.png");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[contains(.,'Upload')]")).click();
+		
+		
+		
 	}
 
 }
