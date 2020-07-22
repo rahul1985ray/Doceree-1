@@ -45,7 +45,7 @@ public class Add_Campaign {
 		 * driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
 		 */
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India14s56a73d325156848");
+		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India14sff56a73d325156848");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[3]")).click();
 		Thread.sleep(2000);
@@ -67,9 +67,15 @@ public class Add_Campaign {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-		//insert date 1
+
+		driver.findElement(By.xpath("//tr[4]/td[4]/div")).click();
+		Thread.sleep(2000);		
 		driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
-		//insert date2
+		driver.findElement(By.xpath("//tr[4]/td[7]/div")).click();
+		
+		
+		
+		
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[5]")).click();
 		driver.findElement(By.xpath("(//span[contains(.,'CPC')])")).click();
 		Thread.sleep(1000);
