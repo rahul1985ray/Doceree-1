@@ -1,5 +1,6 @@
 package advertiser_testcases;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -30,7 +31,7 @@ public class CreativeHub_Images {
 	}
 	
 	@Test
-	public void uploadImages() throws InterruptedException {
+	public void uploadImages() throws InterruptedException, IOException {
 		
 		driver.get(baseURL);
 		
@@ -48,7 +49,7 @@ public class CreativeHub_Images {
 		driver.findElement(By.xpath("//div[6]/a/div")).click();
 		//Thread.sleep(3000);
 		//driver.switchTo().activeElement().sendKeys("C:\\Users\\User\\git\\Doceree\\Doceree_Test\\Files\\Creative\\300x600 - Copy.png");
-		WebElement creative = driver.findElement(By.xpath("//input[@type='file']"));
+		/*WebElement creative = driver.findElement(By.xpath("//input[@type='file']"));
 		creative.sendKeys("C:\\Users\\User\\git\\Doceree\\Doceree_Test\\Files\\Creative\\300x600 - Copy.png");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(.,'Upload')]")).click();
@@ -56,7 +57,9 @@ public class CreativeHub_Images {
 		creative.sendKeys(Keys.ESCAPE);
 		Thread.sleep(2000);
 		driver.findElement(By.name("creativeName")).sendKeys("Test Image");
-		driver.findElement(By.xpath("//mat-dialog-actions/button")).click();
+		driver.findElement(By.xpath("//mat-dialog-actions/button")).click();*/
+		Runtime.getRuntime().exec("C:\\Selenium\\AutoIT\\UploadCreativeImage.exe");
+		Thread.sleep(3000);
 		
 		
 		

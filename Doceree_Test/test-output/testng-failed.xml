@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="advertiser_testcases.CreativeHub_Images">
+      <class name="advertiser_testcases.Add_Campaign">
         <methods>
+          <include name="newCampaign"/>
           <include name="set_up"/>
-          <include name="uploadImages"/>
         </methods>
-      </class> <!-- advertiser_testcases.CreativeHub_Images -->
+      </class> <!-- advertiser_testcases.Add_Campaign -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
