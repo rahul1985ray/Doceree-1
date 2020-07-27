@@ -48,7 +48,7 @@ public class Add_Campaign {
 		 * driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
 		 */
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India");
+		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India Automation");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[3]")).click();
 		Thread.sleep(2000);
