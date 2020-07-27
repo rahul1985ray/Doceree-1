@@ -3,6 +3,8 @@ package advertiser_testcases;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
