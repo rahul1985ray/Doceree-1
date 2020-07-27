@@ -1,5 +1,7 @@
 package advertiser_testcases;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -45,7 +47,7 @@ public class Add_Campaign {
 		 * driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
 		 */
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India14sff56a73d325156848");
+		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[3]")).click();
 		Thread.sleep(2000);
@@ -67,15 +69,14 @@ public class Add_Campaign {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-
-		driver.findElement(By.xpath("//tr[4]/td[4]/div")).click();
-		Thread.sleep(2000);		
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[@class='mat-calendar-body-cell-content mat-calendar-body-today']")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
-		driver.findElement(By.xpath("//tr[4]/td[7]/div")).click();
-		
-		
-		
-		
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[@class='mat-calendar-body-cell-content' and contains(., '31')]")).click();
+		Thread.sleep(2000);
+
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[5]")).click();
 		driver.findElement(By.xpath("(//span[contains(.,'CPC')])")).click();
 		Thread.sleep(1000);
@@ -89,12 +90,17 @@ public class Add_Campaign {
 		driver.findElement(By.id("mat-input-13")).sendKeys("555");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
-		                            
-		
-		
-		
-		
-		
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//small[contains(.,'Leaderboard')]")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Upload from Creative Hub')]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//div[@class='mb-3 col-md-4 widthImg ng-star-inserted'])[4]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='ctaLinkInput']")).sendKeys("https://www.google.com");
+		driver.findElement(By.xpath("//div[@class='mat-slide-toggle-thumb']")).click();
+		driver.findElement(By.xpath("(//button[contains(.,'Next')])[5]")).click();
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//button[@type='button' and contains(.,'Publish')]")).click();
 
 	}
 }
