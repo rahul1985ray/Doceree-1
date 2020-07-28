@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-27T10:12:58Z" name="Default suite" finished-at="2020-07-27T10:14:17Z" duration-ms="78804">
+  <suite started-at="2020-07-28T13:58:20 IST" name="Default suite" finished-at="2020-07-28T13:58:34 IST" duration-ms="13987">
     <groups>
     </groups>
-    <test started-at="2020-07-27T10:12:58Z" name="Default test" finished-at="2020-07-27T10:14:17Z" duration-ms="78804">
-      <class name="advertiser_testcases.Add_Campaign">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Add_Campaign@102cec62]" started-at="2020-07-27T15:42:58Z" name="set_up" finished-at="2020-07-27T15:43:04Z" duration-ms="5807" status="PASS">
+    <test started-at="2020-07-28T13:58:20 IST" name="Default test" finished-at="2020-07-28T13:58:34 IST" duration-ms="13987">
+      <class name="advertiser_testcases.Login">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:advertiser_testcases.Login@4a668b6e]" started-at="2020-07-28T13:58:14 IST" name="set_up" finished-at="2020-07-28T13:58:20 IST" duration-ms="5814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method signature="newCampaign()[pri:0, instance:advertiser_testcases.Add_Campaign@102cec62]" started-at="2020-07-27T15:43:04Z" name="newCampaign" finished-at="2020-07-27T15:44:17Z" duration-ms="72985" status="PASS">
+        <test-method signature="advertiserlogin()[pri:0, instance:advertiser_testcases.Login@4a668b6e]" started-at="2020-07-28T13:58:20 IST" name="advertiserlogin" finished-at="2020-07-28T13:58:34 IST" duration-ms="13963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newCampaign -->
-      </class> <!-- advertiser_testcases.Add_Campaign -->
+        </test-method> <!-- advertiserlogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:advertiser_testcases.Login@4a668b6e]" started-at="2020-07-28T13:58:34 IST" name="teardown" finished-at="2020-07-28T13:58:35 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- advertiser_testcases.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
