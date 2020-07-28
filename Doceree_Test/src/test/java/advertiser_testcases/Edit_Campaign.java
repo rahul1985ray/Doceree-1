@@ -1,5 +1,7 @@
 package advertiser_testcases;
 
-public class Edit_Campaign {
+import baseClass.TestBase;
+
+public class Edit_Campaign extends TestBase {
 
 }

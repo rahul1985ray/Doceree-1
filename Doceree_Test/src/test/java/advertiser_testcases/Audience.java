@@ -1,37 +1,16 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
+
+import baseClass.TestBase;
+
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertTrue;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
-public class Audience {
+public class Audience extends TestBase {
 
 	WebDriver driver = null;
-
-	@BeforeMethod
-	public void set_up() {
-		String projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectPath+"\\Drivers\\Chrome\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-	}
 
 	@Test
 	public void createAudience() throws InterruptedException {
@@ -49,11 +28,6 @@ public class Audience {
 		Thread.sleep(3000);
 		AssertJUnit.assertTrue(driver.findElement(By.xpath("//td[contains(text(),'Hello India')]")).isDisplayed());
 
-	}
-
-	@AfterMethod
-	public void teardown() throws InterruptedException {
-		//driver.quit();
 	}
 
 }
