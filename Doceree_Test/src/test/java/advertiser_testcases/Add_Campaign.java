@@ -1,8 +1,6 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
 import baseClass.TestBase;
 
 import org.openqa.selenium.By;
@@ -10,7 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class Add_Campaign extends TestBase {
-		@Test
+
+	@Test
 	public void newCampaign() throws InterruptedException {
 		driver.get(baseURL);
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
