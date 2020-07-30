@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-	private WebDriver driver;
+	protected WebDriver driver;
 
 	@FindBy(id = "email")
 	WebElement username;
@@ -21,12 +21,11 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	public LoginPage login() {
+
+	public void login() {
 		username.sendKeys("rahul1985@yopmail.com");
 		password.sendKeys("Qwerty@2");
 		submit.click();
-		return PageFactory.initElements(driver, LoginPage.class);
-		
+
 	}
 }
