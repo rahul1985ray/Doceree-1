@@ -28,11 +28,11 @@ public class Add_Campaign extends TestBase {
 		 * driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
 		 */
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India Automation");
+		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India Campaign");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[3]")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//span[contains(.,'Drive more traffic to site')]")).click();
+		driver.findElement(By.xpath("//span[contains(.,'Promote an event')]")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Next')]")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[4]")).click();
@@ -55,7 +55,7 @@ public class Add_Campaign extends TestBase {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//div[@class='mat-calendar-body-cell-content' and contains(., '31')]")).click();
+		driver.findElement(By.xpath("//div[@class='mat-calendar-body-cell-content mat-calendar-body-today']")).click();
 		Thread.sleep(2000);
 
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[5]")).click();
@@ -78,7 +78,9 @@ public class Add_Campaign extends TestBase {
 		driver.findElement(By.xpath("(//div[@class='mb-3 col-md-4 widthImg ng-star-inserted'])[4]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='ctaLinkInput']")).sendKeys("https://www.google.com");
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@class='mat-slide-toggle-thumb']")).click();
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//button[contains(.,'Next')])[5]")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//button[@type='button' and contains(.,'Publish')]")).click();
