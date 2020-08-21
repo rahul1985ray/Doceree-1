@@ -2,14 +2,11 @@ package advertiser_testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
+import baseClass.TestBase_Advertiser;
 
-import baseClass.TestBase;
-
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 
-public class Logout extends TestBase {
+public class Logout extends TestBase_Advertiser {
 
 	@Test
 	public void advertiserlogout() throws InterruptedException {

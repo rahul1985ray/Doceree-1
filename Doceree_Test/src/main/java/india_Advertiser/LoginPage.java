@@ -1,13 +1,12 @@
 package india_Advertiser;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import baseClass.ADV_POM;
 
-	WebDriver driver;
+public class LoginPage extends ADV_POM {
 
 	@FindBy(id = "email")
 	WebElement username;
@@ -18,14 +17,16 @@ public class LoginPage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submit;
 
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
 	}
 
-	public void login() {
+	public void loginmethod() {
+
 		username.sendKeys("rahul1985@yopmail.com");
 		password.sendKeys("Test@123");
 		submit.click();
 
 	}
+
 }

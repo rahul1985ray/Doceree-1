@@ -1,13 +1,11 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
-import baseClass.TestBase;
+import baseClass.TestBase_Advertiser;
 
 import org.openqa.selenium.By;
 
-public class Delete_Audience extends TestBase {
+public class Delete_Audience extends TestBase_Advertiser {
 
 	@Test
 	public void deleteAudience() throws InterruptedException {

@@ -1,15 +1,13 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
-import baseClass.TestBase;
+import baseClass.TestBase_Advertiser;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class CreativeHub_Images extends TestBase {
+public class CreativeHub_Images extends TestBase_Advertiser {
 
 	@Test
 	public void uploadImages() throws InterruptedException, IOException {

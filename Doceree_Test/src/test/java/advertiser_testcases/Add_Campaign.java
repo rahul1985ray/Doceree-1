@@ -1,17 +1,17 @@
 package advertiser_testcases;
 
 import org.testng.annotations.Test;
-import baseClass.TestBase;
+import baseClass.TestBase_Advertiser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class Add_Campaign extends TestBase {
+public class Add_Campaign extends TestBase_Advertiser {
 
 	@Test
 	public void newCampaign() throws InterruptedException {
-		driver.get(baseURL);
+		//driver.get(baseURL);
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -20,13 +20,6 @@ public class Add_Campaign extends TestBase {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='mat-select-arrow'])[2]")).click();
 		driver.findElement(By.xpath("//span[contains(.,'selenium')]")).click();
-		/*
-		 * driver.findElement(By.linkText("Add new campaign")).click();
-		 * Thread.sleep(2000);
-		 * driver.findElement(By.xpath("(//input[@type='text'])[2]")).
-		 * sendKeys("India Capbff333btttbaffffig3");
-		 * driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
-		 */
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='mat-input-7']")).sendKeys("India Campaign");
 		Thread.sleep(2000);

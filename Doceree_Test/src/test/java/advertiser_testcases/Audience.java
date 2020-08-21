@@ -2,21 +2,17 @@ package advertiser_testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
+import baseClass.TestBase_Advertiser;
 
-import baseClass.TestBase;
-
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
-public class Audience extends TestBase {
+public class Audience extends TestBase_Advertiser {
 
-	WebDriver driver = null;
+	
 
 	@Test
 	public void createAudience() throws InterruptedException {
-		driver.get("https://qa-exchange.doceree.com/login");
+		driver.get(baseURL);
 		driver.findElement(By.id("email")).sendKeys("rahul1985@yopmail.com");
 		driver.findElement(By.id("pwd")).sendKeys("Qwerty@2");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();

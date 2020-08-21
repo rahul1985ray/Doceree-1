@@ -3,9 +3,9 @@ package advertiser_testcases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import baseClass.TestBase;
+import baseClass.TestBase_Advertiser;
 
-public class Edit_Campaign extends TestBase {
+public class Edit_Campaign extends TestBase_Advertiser {
 	
 	@Test
 	public void editCampaign() throws InterruptedException {

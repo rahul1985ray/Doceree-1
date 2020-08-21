@@ -2,14 +2,11 @@ package advertiser_testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
+import baseClass.TestBase_Advertiser;
 
-import baseClass.TestBase;
-
-import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 
-public class Edit_Profile extends TestBase {
+public class Edit_Profile extends TestBase_Advertiser {
 
 	@Test
 	public void advertisereditprofile() throws InterruptedException {
