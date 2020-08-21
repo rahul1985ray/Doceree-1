@@ -7,10 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestBase_Publisher {
 	
-	protected WebDriver driver = null;
-	protected String baseURL = null;
-	
-	public void set_up() {
+	public static WebDriver driver;
+	public static String baseURL;
+
+	public void initialise() {
 		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\Chrome\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -19,6 +19,7 @@ public class TestBase_Publisher {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.get(baseURL);
 	}
 
 }
