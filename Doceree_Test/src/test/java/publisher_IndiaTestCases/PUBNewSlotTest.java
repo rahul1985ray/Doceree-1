@@ -1,33 +1,36 @@
 package publisher_IndiaTestCases;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import baseClass.TestBase_Publisher;
 import india_Publisher.PUBLoginPage;
+import india_Publisher.PUBNewSlot;
 
-public class PUBLoginPageTest extends TestBase_Publisher {
-
+public class PUBNewSlotTest extends TestBase_Publisher {
+	
 	PUBLoginPage login;
+	PUBNewSlot createslot;
 
-	@BeforeMethod
+	@BeforeTest
 	public void setup() {
 		initialise();
+		createslot = new PUBNewSlot();
 		login = new PUBLoginPage();
+
 	}
 
 	@Test
-	public void advertiserlogin() {
+	public void createNewSlot() throws InterruptedException {
 		login.loginmethod();
-		Assert.assertTrue(driver.findElement(By.linkText("Manage Slot")).isDisplayed());
+		Thread.sleep(10000);
+		createslot.createnewslot();
+		
 	}
 
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 	}
-
 }

@@ -23,7 +23,7 @@ public class PUBLoginPage extends TestBase_Publisher {
 
 	public void loginmethod() {
 
-		username.sendKeys("rahuladvindia2020@gmail.com");
+		username.sendKeys("rahulpubqaus2020@gmail.com");
 		password.sendKeys("Test@123");
 		submit.click();
 
