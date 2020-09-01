@@ -8,15 +8,22 @@ import baseClass.TestBase_Publisher;
 
 public class PUBHomePage extends TestBase_Publisher {
 
-		@FindBy(linkText = "Manage Slot")
+	@FindBy(linkText = "New Slot")
+	WebElement newslot;
+
+	@FindBy(linkText = "Manage Slot")
 	WebElement manageslot;
 
 	@FindBy(linkText = "Add Platform")
 	WebElement addplatform;
 
 	public PUBHomePage() {
-	PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 
+	}
+
+	public void newslot() {
+		newslot.click();
 	}
 
 	public void manageslot() {
@@ -26,4 +33,5 @@ public class PUBHomePage extends TestBase_Publisher {
 	public void addplatform() {
 		addplatform.click();
 	}
+
 }

@@ -8,9 +8,6 @@ import baseClass.TestBase_Publisher;
 
 public class PUBNewSlot extends TestBase_Publisher {
 
-	@FindBy(linkText = "New Slot")
-	WebElement newslot;
-
 	@FindBy(xpath = "(//input[@formcontrolname='name'])")
 	WebElement slotname;
 
@@ -32,7 +29,7 @@ public class PUBNewSlot extends TestBase_Publisher {
 	@FindBy(xpath = "(//button[contains(.,'Next')])[3]")
 	WebElement nextbidrange;
 
-	@FindBy(xpath = "(//div[@class='mat-radio-label-content'])[2]")
+	@FindBy(xpath = "//mat-radio-button[@class='mat-radio-button codeInjection-radio-button mat-accent ng-star-inserted']")
 	WebElement platformradio;
 
 	@FindBy(xpath = "//button[contains(.,'Save')]")
@@ -42,26 +39,25 @@ public class PUBNewSlot extends TestBase_Publisher {
 		PageFactory.initElements(driver, this);
 
 	}
-	
+
 	public void createnewslot() throws InterruptedException {
-		newslot.click();
-		Thread.sleep(5000);
+
 		slotname.sendKeys("Test Ad Slot");
 		Thread.sleep(1000);
 		pageurl.sendKeys("about-us");
 		Thread.sleep(1000);
 		nextbasics.click();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		creative.click();
 		Thread.sleep(2000);
 		nextdetails.click();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		bidrange.sendKeys("0");
 		Thread.sleep(1000);
 		nextbidrange.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		platformradio.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		saveslot.click();
 	}
 }
