@@ -17,6 +17,12 @@ public class PUBHomePage extends TestBase_Publisher {
 	@FindBy(linkText = "Add Platform")
 	WebElement addplatform;
 
+	@FindBy(linkText = "Accounts")
+	WebElement accounts;
+
+	@FindBy(xpath = "//button[contains(text(),'Manage platform')]")
+	WebElement manageplatform;
+
 	public PUBHomePage() {
 		PageFactory.initElements(driver, this);
 
@@ -32,6 +38,14 @@ public class PUBHomePage extends TestBase_Publisher {
 
 	public void addplatform() {
 		addplatform.click();
+	}
+
+	public void accounts() {
+		accounts.click();
+	}
+
+	public void manageplatform() {
+		manageplatform.click();
 	}
 
 }

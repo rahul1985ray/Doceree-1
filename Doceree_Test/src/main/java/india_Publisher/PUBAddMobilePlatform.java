@@ -6,66 +6,62 @@ import org.openqa.selenium.support.PageFactory;
 
 import baseClass.TestBase_Publisher;
 
-public class PUBAddWebPlatform extends TestBase_Publisher {
+public class PUBAddMobilePlatform extends TestBase_Publisher {
+
+	@FindBy(xpath = "//span[contains(text(),'Mobile')]")
+	WebElement mobileapp;
 
 	@FindBy(xpath = "//input[@placeholder='Enter Name']")
-	WebElement sitename;
+	WebElement mobileappname;
 
 	@FindBy(xpath = "//input[@placeholder='www.example.com']")
-	WebElement siteaddress;
+	WebElement mobileapplink;
+
+	@FindBy(xpath = "//span[contains(text(),'Select type')]")
+	WebElement mobileapptypedropdown;
+
+	@FindBy(xpath = "//span[contains(.,'iOS')]")
+	WebElement mobileapptypeoptions;
 
 	@FindBy(xpath = "//span[contains(text(),'Select Category')]")
-	WebElement sitecategorydropdown;
+	WebElement mobileappcategorydropdown;
 
 	@FindBy(xpath = "//span[contains(text(),'Physician Networking Platform')]")
-	WebElement sitecategoryoptions;
+	WebElement mobilecategoryoptions;
 
 	@FindBy(xpath = "//span[contains(text(),'Select Market')]")
-	WebElement sitetargetusers;
+	WebElement mobiletargetusers;
 
 	@FindBy(xpath = "//span[@class='mat-option-text']")
-	WebElement sitemarket;
+	WebElement mobilemarket;
 
 	@FindBy(xpath = "//input[@type='radio' and @value='yes']")
-	WebElement sitelogin;
+	WebElement mobilelogin;
 
 	@FindBy(xpath = "//button[contains(text(),'Next')]")
-	WebElement sitebasicsnext;
+	WebElement mobilebasicsnext;
 
 	@FindBy(xpath = "(//button[contains(text(),'Next')])[2]")
-	WebElement siteexclusionsnext;
+	WebElement mobileexclusionsnext;
 
 	@FindBy(xpath = "//input[@type='radio' and @value='I have added the code on my platform.']")
-	WebElement siteplatformintegration;
+	WebElement mobileplatformintegration;
 
 	@FindBy(xpath = "(//button[contains(text(),'Next')])[3]")
-	WebElement siteplatformintegrationnext;
+	WebElement mobileplatformintegrationnext;
 
 	@FindBy(xpath = "(//input[@type='radio' and @value='I have added the code on my platform.'])[2]")
-	WebElement siteaudienceidentification;
+	WebElement mobileaudienceidentification;
 
 	@FindBy(xpath = "//button[contains(text(),'Done')]")
-	WebElement siteaudienceidentificationdone;
+	WebElement mobileaudienceidentificationdone;
 
-	public PUBAddWebPlatform() {
+	public PUBAddMobilePlatform() {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void addwebplatform() {
-		sitename.sendKeys("Web Platform");
-		siteaddress.sendKeys("www.testng.com");
-		sitecategorydropdown.click();
-		sitecategoryoptions.click();
-		sitetargetusers.click();
-		sitetargetusers.click();
-		sitemarket.click();
-		sitelogin.click();
-		sitebasicsnext.click();
-		siteexclusionsnext.click();
-		siteplatformintegration.click();
-		siteplatformintegrationnext.click();
-		siteaudienceidentification.click();
-		siteaudienceidentificationdone.click();
+	public void addmobileplatform() {
+
 	}
 
 }
