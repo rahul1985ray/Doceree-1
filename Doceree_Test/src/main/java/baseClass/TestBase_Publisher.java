@@ -12,7 +12,7 @@ public class TestBase_Publisher {
 
 	public void initialise() {
 		String projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\Chrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\Chrome 85\\chromedriver.exe");
 		driver = new ChromeDriver();
 		baseURL = "https://qa-exchange.doceree.com/login";
 		driver.manage().window().maximize();

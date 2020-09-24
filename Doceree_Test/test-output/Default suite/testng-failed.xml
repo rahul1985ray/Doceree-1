@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advertiser_testcases.Add_Campaign">
+      <class name="publisher_IndiaTestCases.PUBEditSlotTest">
         <methods>
-          <include name="newCampaign"/>
+          <include name="editSlot"/>
           <include name="teardown"/>
-          <include name="set_up"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- advertiser_testcases.Add_Campaign -->
+      </class> <!-- publisher_IndiaTestCases.PUBEditSlotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
