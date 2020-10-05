@@ -29,7 +29,7 @@ public class PUBEditSlot extends TestBase_Publisher {
 	@FindBy(xpath = "(//button[contains(.,'Next')])[3]")
 	WebElement nextbidrange;
 
-	@FindBy(xpath = "//mat-radio-button[@class='mat-radio-button codeInjection-radio-button mat-accent ng-star-inserted']")
+	@FindBy(xpath = "//div[contains(text(),' I have added the code on my platform. ')]")
 	WebElement platformradio;
 
 	@FindBy(xpath = "//button[contains(.,'Save')]")
